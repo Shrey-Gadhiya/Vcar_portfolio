@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ideBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14151a"/>
+      <stop offset="100%" stop-color="#0c0d10"/>
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffdb70"/>
+      <stop offset="100%" stop-color="#e0aa3e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#ideBg)"/>
+  
+  <!-- Outer Window Frame -->
+  <rect x="25" y="25" width="750" height="450" rx="12" fill="#18191f" stroke="#33353e" stroke-width="1.5"/>
+  
+  <!-- Header / Tabs Bar -->
+  <rect x="25" y="25" width="750" height="46" rx="12" fill="#20222a"/>
+  <rect x="25" y="58" width="750" height="13" fill="#20222a"/>
+  <line x1="25" y1="71" x2="775" y2="71" stroke="#33353e" stroke-width="1"/>
+  
+  <!-- Window buttons -->
+  <circle cx="50" cy="48" r="6" fill="#ff5f56"/>
+  <circle cx="68" cy="48" r="6" fill="#ffbd2e"/>
+  <circle cx="86" cy="48" r="6" fill="#27c93f"/>
+  
+  <text x="400" y="53" fill="#d6d6d6" font-family="-apple-system, sans-serif" font-size="13" font-weight="500" text-anchor="middle">DevGuardian AI — Automated Code Security &amp; Vulnerability Auditor</text>
+
+  <!-- Left Sidebar (Project Tree) -->
+  <rect x="25" y="72" width="180" height="402" fill="#14151b"/>
+  <line x1="205" y1="72" x2="205" y2="474" stroke="#2c2e37" stroke-width="1"/>
+  
+  <text x="42" y="98" fill="#a0a0a5" font-family="monospace" font-size="11" font-weight="600">EXPLORER</text>
+  <text x="42" y="125" fill="#d6d6d6" font-family="monospace" font-size="12">📁 src/</text>
+  <text x="60" y="148" fill="#d6d6d6" font-family="monospace" font-size="12">📁 auth/</text>
+  <text x="75" y="171" fill="#ffdb70" font-family="monospace" font-size="12" font-weight="600">📄 auth.controller.ts ⚠</text>
+  <text x="60" y="194" fill="#d6d6d6" font-family="monospace" font-size="12">📁 routes/</text>
+  <text x="60" y="217" fill="#d6d6d6" font-family="monospace" font-size="12">📄 app.ts</text>
+  <text x="42" y="245" fill="#d6d6d6" font-family="monospace" font-size="12">📄 package.json</text>
+  <text x="42" y="270" fill="#d6d6d6" font-family="monospace" font-size="12">📄 tsconfig.json</text>
+
+  <rect x="35" y="300" width="160" height="150" rx="8" fill="#1a1c23" stroke="#2f323c" stroke-width="1"/>
+  <text x="47" y="322" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="700">AUDIT SUMMARY</text>
+  <text x="47" y="348" fill="#a0a0a5" font-family="sans-serif" font-size="11">Critical Flaws: 0</text>
+  <text x="47" y="370" fill="#ffdb70" font-family="sans-serif" font-size="11">CWE Warnings: 2</text>
+  <text x="47" y="392" fill="#8bc34a" font-family="sans-serif" font-size="11">Dependencies: Clean</text>
+  <text x="47" y="424" fill="#ffffff" font-family="monospace" font-size="10">IBM Bob 2.0 AI Core</text>
+
+  <!-- Center Code Editor Pane -->
+  <rect x="206" y="72" width="310" height="402" fill="#16171d"/>
+  
+  <!-- Editor Tab -->
+  <rect x="206" y="72" width="160" height="30" fill="#1c1e26"/>
+  <text x="220" y="92" fill="#ffffff" font-family="monospace" font-size="11">auth.controller.ts</text>
+  <circle cx="350" cy="88" r="3" fill="#ffdb70"/>
+  <line x1="206" y1="102" x2="516" y2="102" stroke="#2c2e37" stroke-width="1"/>
+
+  <!-- Code Lines -->
+  <text x="215" y="130" fill="#666875" font-family="monospace" font-size="11">01</text>
+  <text x="240" y="130" fill="#e0aa3e" font-family="monospace" font-size="11">import</text>
+  <text x="286" y="130" fill="#d6d6d6" font-family="monospace" font-size="11">{ Request } from 'express';</text>
+
+  <text x="215" y="152" fill="#666875" font-family="monospace" font-size="11">02</text>
+  
+  <text x="215" y="174" fill="#666875" font-family="monospace" font-size="11">03</text>
+  <text x="240" y="174" fill="#e0aa3e" font-family="monospace" font-size="11">export async function</text>
+  <text x="395" y="174" fill="#ffdb70" font-family="monospace" font-size="11">login(req) {</text>
+
+  <text x="215" y="196" fill="#666875" font-family="monospace" font-size="11">04</text>
+  <text x="255" y="196" fill="#d6d6d6" font-family="monospace" font-size="11">const { username, query } = req.body;</text>
+
+  <!-- Vulnerability Line Highlight -->
+  <rect x="210" y="206" width="300" height="24" fill="#382c16" stroke="#e0aa3e" stroke-width="0.75"/>
+  <text x="215" y="222" fill="#ffdb70" font-family="monospace" font-size="11">05</text>
+  <text x="255" y="222" fill="#ffdb70" font-family="monospace" font-size="11">const result = eval(query); // ⚠ VULN</text>
+
+  <text x="215" y="248" fill="#666875" font-family="monospace" font-size="11">06</text>
+  <text x="255" y="248" fill="#d6d6d6" font-family="monospace" font-size="11">return sanitize(result);</text>
+
+  <text x="215" y="270" fill="#666875" font-family="monospace" font-size="11">07</text>
+  <text x="240" y="270" fill="#d6d6d6" font-family="monospace" font-size="11">}</text>
+
+  <!-- Right AI Security Agent Remediation Card -->
+  <rect x="516" y="72" width="259" height="402" fill="#14151b"/>
+  <line x1="516" y1="72" x2="516" y2="474" stroke="#2c2e37" stroke-width="1"/>
+
+  <rect x="530" y="90" width="230" height="32" rx="6" fill="#242630"/>
+  <text x="545" y="111" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="700">DEVGUARDIAN AGENT REPORT</text>
+
+  <!-- Issue Box -->
+  <rect x="530" y="135" width="230" height="90" rx="8" fill="#252118" stroke="#ffdb70" stroke-width="1"/>
+  <text x="545" y="158" fill="#ff5f56" font-family="sans-serif" font-size="11" font-weight="700">CWE-95: Code Injection</text>
+  <text x="545" y="178" fill="#d6d6d6" font-family="sans-serif" font-size="11">Direct eval() usage on user input permits unauthenticated RCE.</text>
+  <text x="545" y="208" fill="#ffdb70" font-family="monospace" font-size="10">Severity: HIGH (CVSS 8.4)</text>
+
+  <!-- Remediation Suggestion -->
+  <rect x="530" y="240" width="230" height="150" rx="8" fill="#1a1c24" stroke="#333744" stroke-width="1"/>
+  <text x="545" y="262" fill="#8bc34a" font-family="sans-serif" font-size="11" font-weight="700">AUTO-FIX PROPOSED</text>
+  <text x="545" y="285" fill="#a0a0a5" font-family="sans-serif" font-size="10">Replace dynamic eval() with safe parameter binding &amp; JSON schema:</text>
+  
+  <rect x="540" y="300" width="210" height="48" rx="4" fill="#0d0e12"/>
+  <text x="548" y="320" fill="#78c878" font-family="monospace" font-size="10">+ const parser = new QueryParser();</text>
+  <text x="548" y="336" fill="#78c878" font-family="monospace" font-size="10">+ const result = parser.execute(query);</text>
+
+  <rect x="540" y="358" width="210" height="24" rx="4" fill="url(#goldAcc)"/>
+  <text x="645" y="374" fill="#121212" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">APPLY AGENT PATCH</text>
+
+  <!-- Status Bar -->
+  <rect x="530" y="415" width="230" height="35" rx="6" fill="#1d1e26"/>
+  <text x="545" y="437" fill="#a0a0a5" font-family="monospace" font-size="10">AST Security Engine: Active</text>
+</svg>

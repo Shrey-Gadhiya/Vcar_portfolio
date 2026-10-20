@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#0f0f11"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffdb70"/>
+      <stop offset="100%" stop-color="#e0aa3e"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242428"/>
+      <stop offset="100%" stop-color="#1a1a1c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" rx="16" fill="url(#bg)"/>
+  
+  <!-- Window Frame -->
+  <rect x="25" y="25" width="750" height="450" rx="12" fill="#1c1c1f" stroke="#38383a" stroke-width="1.5"/>
+  
+  <!-- Window Header Bar -->
+  <rect x="25" y="25" width="750" height="48" rx="12" fill="#252529"/>
+  <rect x="25" y="60" width="750" height="13" fill="#252529"/>
+  <line x1="25" y1="73" x2="775" y2="73" stroke="#38383a" stroke-width="1"/>
+  
+  <!-- Window Controls -->
+  <circle cx="50" cy="49" r="6" fill="#ff5f56"/>
+  <circle cx="68" cy="49" r="6" fill="#ffbd2e"/>
+  <circle cx="86" cy="49" r="6" fill="#27c93f"/>
+  
+  <!-- Title -->
+  <text x="400" y="54" fill="#d6d6d6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" text-anchor="middle">Network Log Analyzer (Tkinter &amp; Python) — Incident Monitor</text>
+  
+  <!-- Quick Stat Cards -->
+  <rect x="50" y="92" width="210" height="64" rx="8" fill="url(#cardBg)" stroke="#38383a" stroke-width="1"/>
+  <text x="68" y="116" fill="#a0a0a5" font-family="sans-serif" font-size="11">TOTAL PACKETS PARSED</text>
+  <text x="68" y="142" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="600">48,920</text>
+  
+  <rect x="285" y="92" width="220" height="64" rx="8" fill="url(#cardBg)" stroke="#e0aa3e" stroke-width="1.2"/>
+  <text x="303" y="116" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="500">SUSPICIOUS IP DETECTIONS</text>
+  <text x="303" y="142" fill="#ffdb70" font-family="sans-serif" font-size="20" font-weight="700">7 Anomalies</text>
+  
+  <rect x="530" y="92" width="220" height="64" rx="8" fill="url(#cardBg)" stroke="#38383a" stroke-width="1"/>
+  <text x="548" y="116" fill="#a0a0a5" font-family="sans-serif" font-size="11">EXPORT ENGINE</text>
+  <text x="548" y="142" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="500">PDF Report Ready</text>
+
+  <!-- Table Container -->
+  <rect x="50" y="175" width="700" height="275" rx="8" fill="#151518" stroke="#2e2e32" stroke-width="1"/>
+  
+  <!-- Table Header -->
+  <rect x="50" y="175" width="700" height="34" rx="8" fill="#202024"/>
+  <text x="75" y="197" fill="#a0a0a5" font-family="monospace" font-size="11" font-weight="600">TIMESTAMP</text>
+  <text x="210" y="197" fill="#a0a0a5" font-family="monospace" font-size="11" font-weight="600">SOURCE IP</text>
+  <text x="350" y="197" fill="#a0a0a5" font-family="monospace" font-size="11" font-weight="600">DESTINATION</text>
+  <text x="490" y="197" fill="#a0a0a5" font-family="monospace" font-size="11" font-weight="600">PROTOCOL</text>
+  <text x="630" y="197" fill="#a0a0a5" font-family="monospace" font-size="11" font-weight="600">THREAT LEVEL</text>
+  <line x1="50" y1="209" x2="750" y2="209" stroke="#2e2e32" stroke-width="1"/>
+
+  <!-- Row 1 - Suspicious Alert -->
+  <rect x="50" y="210" width="700" height="42" fill="#262118"/>
+  <text x="75" y="236" fill="#d6d6d6" font-family="monospace" font-size="12">10:42:18.420</text>
+  <text x="210" y="236" fill="#ffdb70" font-family="monospace" font-size="12" font-weight="600">192.168.1.105</text>
+  <text x="350" y="236" fill="#d6d6d6" font-family="monospace" font-size="12">10.0.0.1:445</text>
+  <text x="490" y="236" fill="#d6d6d6" font-family="monospace" font-size="12">TCP SYN (PortScan)</text>
+  <rect x="625" y="220" width="95" height="22" rx="4" fill="#593a10" stroke="#ffdb70" stroke-width="1"/>
+  <text x="672" y="235" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">SUSPICIOUS</text>
+  <line x1="50" y1="252" x2="750" y2="252" stroke="#2e2e32" stroke-width="1"/>
+
+  <!-- Row 2 - Normal -->
+  <text x="75" y="278" fill="#d6d6d6" font-family="monospace" font-size="12">10:42:19.012</text>
+  <text x="210" y="278" fill="#d6d6d6" font-family="monospace" font-size="12">192.168.1.42</text>
+  <text x="350" y="278" fill="#d6d6d6" font-family="monospace" font-size="12">8.8.8.8:53</text>
+  <text x="490" y="278" fill="#d6d6d6" font-family="monospace" font-size="12">DNS Query</text>
+  <rect x="625" y="262" width="75" height="22" rx="4" fill="#202a20" stroke="#387038" stroke-width="1"/>
+  <text x="662" y="277" fill="#78c878" font-family="sans-serif" font-size="11" font-weight="500" text-anchor="middle">CLEAN</text>
+  <line x1="50" y1="294" x2="750" y2="294" stroke="#2e2e32" stroke-width="1"/>
+
+  <!-- Row 3 - Normal -->
+  <text x="75" y="320" fill="#d6d6d6" font-family="monospace" font-size="12">10:42:21.155</text>
+  <text x="210" y="278" y="320" fill="#d6d6d6" font-family="monospace" font-size="12">192.168.1.88</text>
+  <text x="350" y="320" fill="#d6d6d6" font-family="monospace" font-size="12">142.250.190.46:443</text>
+  <text x="490" y="320" fill="#d6d6d6" font-family="monospace" font-size="12">TLSv1.3</text>
+  <rect x="625" y="304" width="75" height="22" rx="4" fill="#202a20" stroke="#387038" stroke-width="1"/>
+  <text x="662" y="319" fill="#78c878" font-family="sans-serif" font-size="11" font-weight="500" text-anchor="middle">CLEAN</text>
+  <line x1="50" y1="336" x2="750" y2="336" stroke="#2e2e32" stroke-width="1"/>
+
+  <!-- Row 4 - Suspicious IP Rate -->
+  <rect x="50" y="337" width="700" height="42" fill="#262118"/>
+  <text x="75" y="363" fill="#d6d6d6" font-family="monospace" font-size="12">10:42:22.890</text>
+  <text x="210" y="363" fill="#ffdb70" font-family="monospace" font-size="12" font-weight="600">45.142.212.8</text>
+  <text x="350" y="363" fill="#d6d6d6" font-family="monospace" font-size="12">192.168.1.1:22</text>
+  <text x="490" y="363" fill="#d6d6d6" font-family="monospace" font-size="12">SSH BruteForce</text>
+  <rect x="625" y="347" width="95" height="22" rx="4" fill="#593a10" stroke="#ffdb70" stroke-width="1"/>
+  <text x="672" y="362" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">HIGH RISK</text>
+  <line x1="50" y1="379" x2="750" y2="379" stroke="#2e2e32" stroke-width="1"/>
+
+  <!-- Row 5 - Normal -->
+  <text x="75" y="405" fill="#d6d6d6" font-family="monospace" font-size="12">10:42:25.104</text>
+  <text x="210" y="405" fill="#d6d6d6" font-family="monospace" font-size="12">192.168.1.15</text>
+  <text x="350" y="405" fill="#d6d6d6" font-family="monospace" font-size="12">172.217.16.206:443</text>
+  <text x="490" y="405" fill="#d6d6d6" font-family="monospace" font-size="12">HTTPS ACK</text>
+  <rect x="625" y="389" width="75" height="22" rx="4" fill="#202a20" stroke="#387038" stroke-width="1"/>
+  <text x="662" y="404" fill="#78c878" font-family="sans-serif" font-size="11" font-weight="500" text-anchor="middle">CLEAN</text>
+
+  <!-- Bottom Terminal Bar -->
+  <rect x="50" y="420" width="700" height="30" rx="0 0 8 8" fill="#19191d"/>
+  <text x="68" y="440" fill="#a0a0a5" font-family="monospace" font-size="11">Python Engine: Active | Live Tkinter Log Parser v2.4 | PDF Report Auto-Export: Enabled</text>
+</svg>

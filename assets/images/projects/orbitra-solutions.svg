@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="orbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17181c"/>
+      <stop offset="100%" stop-color="#0f0f12"/>
+    </linearGradient>
+    <linearGradient id="goldOrb" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffdb70"/>
+      <stop offset="100%" stop-color="#e0aa3e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#orbBg)"/>
+  <rect x="25" y="25" width="750" height="450" rx="12" fill="#1b1c21" stroke="#363740" stroke-width="1.5"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="750" height="48" rx="12" fill="#24252c"/>
+  <rect x="25" y="60" width="750" height="13" fill="#24252c"/>
+  <line x1="25" y1="73" x2="775" y2="73" stroke="#363740" stroke-width="1"/>
+  <circle cx="50" cy="49" r="6" fill="#ff5f56"/>
+  <circle cx="68" cy="49" r="6" fill="#ffbd2e"/>
+  <circle cx="86" cy="49" r="6" fill="#27c93f"/>
+  <text x="400" y="54" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Orbitra Solutions — Commercial Estimate &amp; Invoicing Platform</text>
+
+  <!-- Left Sidebar Controls -->
+  <rect x="45" y="90" width="180" height="360" rx="8" fill="#141418" stroke="#2d2d35" stroke-width="1"/>
+  <text x="60" y="115" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="700">BILLING ENGINE</text>
+  
+  <rect x="55" y="130" width="160" height="32" rx="6" fill="#24252e" stroke="#ffdb70" stroke-width="1"/>
+  <text x="70" y="151" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="600">📊 New Quotation</text>
+
+  <text x="70" y="190" fill="#d6d6d6" font-family="sans-serif" font-size="11">📑 Client Ledger</text>
+  <text x="70" y="222" fill="#d6d6d6" font-family="sans-serif" font-size="11">📦 Product Catalog</text>
+  <text x="70" y="254" fill="#d6d6d6" font-family="sans-serif" font-size="11">💰 GST &amp; Tax Setup</text>
+  <text x="70" y="286" fill="#d6d6d6" font-family="sans-serif" font-size="11">🗄 SQLite DB Sync</text>
+
+  <rect x="55" y="325" width="160" height="110" rx="6" fill="#1c1d24" stroke="#2d2d35" stroke-width="1"/>
+  <text x="68" y="348" fill="#a0a0a5" font-family="sans-serif" font-size="10">THIS MONTH SALES</text>
+  <text x="68" y="375" fill="#ffdb70" font-family="monospace" font-size="18" font-weight="700">₹4,82,500</text>
+  <text x="68" y="398" fill="#78c878" font-family="sans-serif" font-size="10">▲ 24% vs Prev Month</text>
+  <text x="68" y="420" fill="#a0a0a5" font-family="sans-serif" font-size="10">42 Invoices Generated</text>
+
+  <!-- Right: Estimate Document Preview -->
+  <rect x="240" y="90" width="515" height="360" rx="8" fill="#141418" stroke="#2d2d35" stroke-width="1"/>
+  
+  <!-- Invoice Header -->
+  <text x="265" y="125" fill="#ffdb70" font-family="sans-serif" font-size="16" font-weight="800">ORBITRA ESTIMATE #ORB-2026-104</text>
+  <text x="630" y="125" fill="#a0a0a5" font-family="monospace" font-size="11">DATE: 20-OCT-2026</text>
+  <line x1="265" y1="140" x2="730" y2="140" stroke="#2c2d35" stroke-width="1"/>
+
+  <!-- Client & Job Info -->
+  <text x="265" y="162" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">CLIENT / CUSTOMER:</text>
+  <text x="265" y="178" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Apex Infrastructure Ltd, Surat</text>
+  
+  <text x="510" y="162" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">PAYMENT TERMS:</text>
+  <text x="510" y="178" fill="#ffffff" font-family="sans-serif" font-size="12">Net 30 Days (GST Incl.)</text>
+
+  <!-- Line Items Table -->
+  <rect x="265" y="195" width="465" height="155" rx="6" fill="#1a1b22" stroke="#2c2d35" stroke-width="1"/>
+  
+  <!-- Table Header -->
+  <rect x="265" y="195" width="465" height="28" rx="6 6 0 0" fill="#22232c"/>
+  <text x="280" y="213" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">ITEM DESCRIPTION</text>
+  <text x="470" y="213" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">QTY</text>
+  <text x="540" y="213" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">RATE</text>
+  <text x="650" y="213" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">AMOUNT</text>
+  <line x1="265" y1="223" x2="730" y2="223" stroke="#2c2d35" stroke-width="1"/>
+
+  <text x="280" y="246" fill="#d6d6d6" font-family="sans-serif" font-size="11">Industrial Hardware Assembly A</text>
+  <text x="475" y="246" fill="#d6d6d6" font-family="monospace" font-size="11">12</text>
+  <text x="540" y="246" fill="#d6d6d6" font-family="monospace" font-size="11">₹4,200</text>
+  <text x="650" y="246" fill="#ffdb70" font-family="monospace" font-size="11" font-weight="600">₹50,400</text>
+
+  <text x="280" y="274" fill="#d6d6d6" font-family="sans-serif" font-size="11">Network Cabling &amp; Switch Rack 24P</text>
+  <text x="475" y="274" fill="#d6d6d6" font-family="monospace" font-size="11">4</text>
+  <text x="540" y="274" fill="#d6d6d6" font-family="monospace" font-size="11">₹8,500</text>
+  <text x="650" y="274" fill="#ffdb70" font-family="monospace" font-size="11" font-weight="600">₹34,000</text>
+
+  <text x="280" y="302" fill="#d6d6d6" font-family="sans-serif" font-size="11">Field Deployment &amp; System Setup</text>
+  <text x="475" y="302" fill="#d6d6d6" font-family="monospace" font-size="11">1</text>
+  <text x="540" y="302" fill="#d6d6d6" font-family="monospace" font-size="11">₹12,000</text>
+  <text x="650" y="302" fill="#ffdb70" font-family="monospace" font-size="11" font-weight="600">₹12,000</text>
+
+  <line x1="265" y1="318" x2="730" y2="318" stroke="#2c2d35" stroke-width="1"/>
+  
+  <text x="510" y="337" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="700">SUBTOTAL (GST 18%):</text>
+  <text x="640" y="337" fill="#ffdb70" font-family="monospace" font-size="14" font-weight="800">₹1,13,752</text>
+
+  <!-- Action Bar -->
+  <rect x="265" y="375" width="220" height="35" rx="6" fill="url(#goldOrb)"/>
+  <text x="375" y="397" fill="#121212" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">PRINT / EXPORT ESTIMATE</text>
+
+  <rect x="500" y="375" width="230" height="35" rx="6" fill="#1f2029" stroke="#363740" stroke-width="1"/>
+  <text x="615" y="397" fill="#d6d6d6" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">SAVE TO SQLITE CLOUD</text>
+
+  <text x="265" y="435" fill="#a0a0a5" font-family="sans-serif" font-size="10">Built with React, TypeScript, Tailwind CSS, Vite &amp; SQLite</text>
+</svg>

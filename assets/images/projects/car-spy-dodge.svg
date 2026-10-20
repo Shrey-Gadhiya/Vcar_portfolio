@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="carBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19191d"/>
+      <stop offset="100%" stop-color="#0e0e11"/>
+    </linearGradient>
+    <linearGradient id="goldCar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffdb70"/>
+      <stop offset="100%" stop-color="#e0aa3e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#carBg)"/>
+  
+  <!-- Outer Window -->
+  <rect x="25" y="25" width="750" height="450" rx="12" fill="#17171a" stroke="#36363d" stroke-width="1.5"/>
+  
+  <!-- Window Header -->
+  <rect x="25" y="25" width="750" height="48" rx="12" fill="#222227"/>
+  <rect x="25" y="60" width="750" height="13" fill="#222227"/>
+  <line x1="25" y1="73" x2="775" y2="73" stroke="#36363d" stroke-width="1"/>
+  
+  <circle cx="50" cy="49" r="6" fill="#ff5f56"/>
+  <circle cx="68" cy="49" r="6" fill="#ffbd2e"/>
+  <circle cx="86" cy="49" r="6" fill="#27c93f"/>
+  
+  <text x="400" y="54" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">CAR SPY — Dodge Automotive Performance &amp; Vehicle Showcase</text>
+
+  <!-- Navigation Bar inside app -->
+  <rect x="45" y="90" width="710" height="40" rx="8" fill="#1d1d23" stroke="#2f2f37" stroke-width="1"/>
+  <text x="65" y="115" fill="#ffdb70" font-family="sans-serif" font-size="13" font-weight="800" letter-spacing="1.5">CAR SPY // DODGE</text>
+  <text x="240" y="114" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="600">CHALLENGER SRT</text>
+  <text x="365" y="114" fill="#a0a0a5" font-family="sans-serif" font-size="11">CHARGER HELLCAT</text>
+  <text x="495" y="114" fill="#a0a0a5" font-family="sans-serif" font-size="11">DURANGO SRT</text>
+  <text x="615" y="114" fill="#a0a0a5" font-family="sans-serif" font-size="11">SPECS COMPARATOR</text>
+
+  <!-- Left: Muscle Car Silhouette & Showcase Visual -->
+  <rect x="45" y="145" width="440" height="250" rx="10" fill="#131316" stroke="#2f2f37" stroke-width="1"/>
+  
+  <!-- Challenger Silhouette & Aggressive Headlights -->
+  <!-- Ambient Grille Glow -->
+  <ellipse cx="265" cy="270" rx="170" ry="25" fill="#ffdb70" opacity="0.12"/>
+  
+  <!-- Car Roofline & Body Contour -->
+  <path d="M 120 280 C 130 250, 160 230, 200 220 L 250 200 C 290 195, 330 205, 370 230 L 410 260 C 430 270, 435 285, 435 295 L 95 295 C 95 285, 105 280, 120 280 Z" fill="#202026"/>
+  <path d="M 175 228 L 245 208 C 285 203, 315 212, 350 235 L 360 255 L 155 255 Z" fill="#0d0d10"/>
+  
+  <!-- Front Hood & Grille -->
+  <rect x="100" y="278" width="330" height="34" rx="4" fill="#1b1b22" stroke="#363640" stroke-width="1"/>
+  <!-- Honeycomb Mesh -->
+  <line x1="105" y1="288" x2="425" y2="288" stroke="#282832" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="105" y1="298" x2="425" y2="298" stroke="#282832" stroke-width="2" stroke-dasharray="4,3"/>
+  
+  <!-- Halo LED Headlights (Glowing Yellow/Amber) -->
+  <circle cx="140" cy="292" r="12" fill="#262118" stroke="#ffdb70" stroke-width="2.5"/>
+  <circle cx="175" cy="292" r="10" fill="#262118" stroke="#ffdb70" stroke-width="2.5"/>
+  
+  <circle cx="355" cy="292" r="10" fill="#262118" stroke="#ffdb70" stroke-width="2.5"/>
+  <circle cx="390" cy="292" r="12" fill="#262118" stroke="#ffdb70" stroke-width="2.5"/>
+  
+  <!-- SRT Badge in Grille -->
+  <rect x="250" y="286" width="30" height="12" rx="2" fill="#ff5f56"/>
+  <text x="265" y="295" fill="#ffffff" font-family="sans-serif" font-size="8" font-weight="900" text-anchor="middle">SRT</text>
+
+  <!-- Wheels -->
+  <circle cx="145" cy="325" r="28" fill="#141418" stroke="#383844" stroke-width="3"/>
+  <circle cx="145" cy="325" r="14" fill="#24242e" stroke="#ffdb70" stroke-width="1.5"/>
+  
+  <circle cx="385" cy="325" r="28" fill="#141418" stroke="#383844" stroke-width="3"/>
+  <circle cx="385" cy="325" r="14" fill="#24242e" stroke="#ffdb70" stroke-width="1.5"/>
+
+  <!-- Showcase Badge Tag -->
+  <rect x="65" y="165" width="230" height="42" rx="6" fill="#1f1e27" stroke="#363640" stroke-width="1"/>
+  <text x="78" y="186" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">Dodge Challenger SRT® Hellcat</text>
+  <text x="78" y="200" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="600">6.2L Supercharged HEMI® V8</text>
+
+  <!-- Right: Vehicle Telemetry & Performance Specs -->
+  <rect x="500" y="145" width="255" height="250" rx="10" fill="#141418" stroke="#2f2f37" stroke-width="1"/>
+  
+  <text x="520" y="175" fill="#ffdb70" font-family="sans-serif" font-size="12" font-weight="700">PERFORMANCE TELEMETRY</text>
+
+  <!-- Spec Card 1: Horsepower -->
+  <rect x="515" y="190" width="225" height="52" rx="6" fill="#1e1e24" stroke="#ffdb70" stroke-width="0.8"/>
+  <text x="530" y="210" fill="#a0a0a5" font-family="sans-serif" font-size="10">SUPERCHARGED OUTPUT</text>
+  <text x="530" y="232" fill="#ffdb70" font-family="monospace" font-size="18" font-weight="800">797 HP @ 6,300 RPM</text>
+
+  <!-- Spec Card 2: Torque & 0-60 -->
+  <rect x="515" y="250" width="108" height="54" rx="6" fill="#1e1e24" stroke="#2f2f37" stroke-width="1"/>
+  <text x="525" y="268" fill="#a0a0a5" font-family="sans-serif" font-size="9">TORQUE</text>
+  <text x="525" y="292" fill="#ffffff" font-family="monospace" font-size="15" font-weight="700">707 lb-ft</text>
+
+  <rect x="632" y="250" width="108" height="54" rx="6" fill="#1e1e24" stroke="#2f2f37" stroke-width="1"/>
+  <text x="642" y="268" fill="#a0a0a5" font-family="sans-serif" font-size="9">0 - 60 MPH</text>
+  <text x="642" y="292" fill="#ffffff" font-family="monospace" font-size="15" font-weight="700">3.6 Sec</text>
+
+  <!-- Spec Card 3: Top Speed -->
+  <rect x="515" y="312" width="225" height="42" rx="6" fill="#1e1e24" stroke="#2f2f37" stroke-width="1"/>
+  <text x="530" y="330" fill="#a0a0a5" font-family="sans-serif" font-size="10">TRACK TOP SPEED</text>
+  <text x="530" y="347" fill="#ffdb70" font-family="monospace" font-size="14" font-weight="700">203 MPH (327 km/h)</text>
+
+  <rect x="515" y="362" width="225" height="24" rx="4" fill="url(#goldCar)"/>
+  <text x="627" y="378" fill="#121212" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">VIEW TECHNICAL SPECS</text>
+
+  <!-- Bottom App Status Bar -->
+  <rect x="45" y="410" width="710" height="42" rx="6" fill="#18181e" stroke="#2f2f37" stroke-width="1"/>
+  <text x="65" y="435" fill="#a0a0a5" font-family="monospace" font-size="11">CAR SPY Portal • Responsive Showcase Engine • HTML5, CSS3, Bootstrap &amp; JavaScript</text>
+</svg>

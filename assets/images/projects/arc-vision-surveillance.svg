@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gridBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121316"/>
+      <stop offset="100%" stop-color="#090a0c"/>
+    </linearGradient>
+    <linearGradient id="hudGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffdb70"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <pattern id="tacticalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#23262d" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" rx="16" fill="url(#gridBg)"/>
+  <rect width="800" height="500" rx="16" fill="url(#tacticalGrid)" opacity="0.65"/>
+  
+  <!-- Outer Tactical Frame -->
+  <rect x="25" y="25" width="750" height="450" rx="12" fill="none" stroke="#38383a" stroke-width="1.5"/>
+
+  <!-- Top Tactical HUD Bar -->
+  <rect x="25" y="25" width="750" height="48" rx="12" fill="#181a1f"/>
+  <rect x="25" y="60" width="750" height="13" fill="#181a1f"/>
+  <line x1="25" y1="73" x2="775" y2="73" stroke="#2e323a" stroke-width="1"/>
+  
+  <!-- Live Camera Tag -->
+  <rect x="42" y="38" width="10" height="10" rx="2" fill="#ff5f56"/>
+  <text x="62" y="47" fill="#ffffff" font-family="monospace" font-size="12" font-weight="700">LIVE FEED • CAM-04 (SECTOR-B PERIMETER)</text>
+  <text x="500" y="47" fill="#a0a0a5" font-family="monospace" font-size="11">RTSP://10.24.8.40:554/live • SHA-256 VERIFIED</text>
+  <rect x="700" y="34" width="60" height="20" rx="4" fill="#292318" stroke="#ffdb70" stroke-width="1"/>
+  <text x="730" y="48" fill="#ffdb70" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">ONLINE</text>
+
+  <!-- Camera Vision Viewport -->
+  <rect x="45" y="90" width="480" height="320" rx="8" fill="#0d1117" stroke="#2e323a" stroke-width="1"/>
+  
+  <!-- Night Vision / Terrain Horizon Silhouette -->
+  <path d="M 45 320 Q 140 250 250 280 T 420 240 L 525 290 L 525 410 L 45 410 Z" fill="#151b22"/>
+  <path d="M 45 360 Q 200 310 320 340 T 525 330 L 525 410 L 45 410 Z" fill="#1a222d"/>
+  
+  <!-- Virtual Directional Fence Line (Yellow glowing warning boundary) -->
+  <line x1="80" y1="360" x2="490" y2="280" stroke="#ffdb70" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="310" y="330" fill="#ffdb70" font-family="monospace" font-size="10" font-weight="700" transform="rotate(-11, 310, 330)">▲ BUFFER ZONE BOUNDARY LINE ▲</text>
+
+  <!-- Multi-Object Detection Bounding Box 1 (Human Intruder) -->
+  <rect x="230" y="200" width="70" height="135" fill="none" stroke="#ffdb70" stroke-width="2"/>
+  <!-- Target Tag -->
+  <rect x="230" y="180" width="125" height="20" fill="#282215" stroke="#ffdb70" stroke-width="1"/>
+  <text x="236" y="194" fill="#ffdb70" font-family="monospace" font-size="10" font-weight="700">PERSON [98.6%] #412</text>
+  <!-- Reticle Corners -->
+  <path d="M 225 200 L 225 210 M 225 200 L 235 200" stroke="#ffdb70" stroke-width="2"/>
+  <path d="M 305 200 L 305 210 M 305 200 L 295 200" stroke="#ffdb70" stroke-width="2"/>
+  <path d="M 225 335 L 225 325 M 225 335 L 235 335" stroke="#ffdb70" stroke-width="2"/>
+  <path d="M 305 335 L 305 325 M 305 335 L 295 335" stroke="#ffdb70" stroke-width="2"/>
+  
+  <!-- Human Figure Silhouette inside Bounding Box -->
+  <circle cx="265" cy="225" r="10" fill="#ffdb70" opacity="0.85"/>
+  <path d="M 255 240 L 275 240 L 270 290 L 276 325 L 268 325 L 265 295 L 262 325 L 254 325 L 260 290 Z" fill="#ffdb70" opacity="0.85"/>
+
+  <!-- Compass Crosshairs on Camera -->
+  <circle cx="285" cy="250" r="160" fill="none" stroke="#2e323a" stroke-width="0.75" stroke-dasharray="3,6"/>
+  <line x1="285" y1="95" x2="285" y2="405" stroke="#2e323a" stroke-width="0.75" stroke-dasharray="2,5"/>
+  <line x1="50" y1="250" x2="520" y2="250" stroke="#2e323a" stroke-width="0.75" stroke-dasharray="2,5"/>
+
+  <!-- Right Tactical Telemetry Panel -->
+  <rect x="540" y="90" width="215" height="375" rx="8" fill="#15171c" stroke="#2e323a" stroke-width="1"/>
+  
+  <rect x="540" y="90" width="215" height="34" rx="8" fill="#1e2027"/>
+  <text x="555" y="112" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="700">THREAT INTELLIGENCE</text>
+  
+  <!-- Threat Score Card -->
+  <rect x="555" y="138" width="185" height="70" rx="6" fill="#252118" stroke="#e0aa3e" stroke-width="1"/>
+  <text x="568" y="160" fill="#a0a0a5" font-family="sans-serif" font-size="10">CORRELATED THREAT SCORE</text>
+  <text x="568" y="192" fill="#ffdb70" font-family="monospace" font-size="28" font-weight="800">89 / 100</text>
+  <text x="690" y="190" fill="#ff5f56" font-family="monospace" font-size="11" font-weight="700">HIGH</text>
+
+  <!-- Incident Lifecycle Status -->
+  <text x="555" y="235" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">INCIDENT STATE</text>
+  <rect x="555" y="245" width="185" height="28" rx="4" fill="#1e2027"/>
+  <text x="568" y="264" fill="#ffffff" font-family="monospace" font-size="11">TRIGGER: ZONE_BREACH</text>
+
+  <text x="555" y="295" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">OBJECT CLASSIFIER</text>
+  <text x="555" y="315" fill="#d6d6d6" font-family="monospace" font-size="11">YOLOv8 + ByteTrack</text>
+
+  <text x="555" y="345" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">LOCATION COORDINATES</text>
+  <text x="555" y="365" fill="#ffdb70" font-family="monospace" font-size="11">28.6139° N, 77.2090° E</text>
+
+  <text x="555" y="395" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">PROOF OF INTEGRITY</text>
+  <text x="555" y="415" fill="#a0a0a5" font-family="monospace" font-size="10">SHA256: e8b9...4f91</text>
+
+  <!-- Bottom Command Bar -->
+  <rect x="45" y="420" width="480" height="45" rx="6" fill="#15171c" stroke="#2e323a" stroke-width="1"/>
+  <text x="60" y="447" fill="#ffffff" font-family="monospace" font-size="11">ARC VISION PLATFORM • SIH26187 • MHA &amp; SSB SURVEILLANCE GRID</text>
+</svg>

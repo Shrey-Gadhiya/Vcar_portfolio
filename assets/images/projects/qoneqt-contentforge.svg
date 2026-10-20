@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16151c"/>
+      <stop offset="100%" stop-color="#0e0d13"/>
+    </linearGradient>
+    <linearGradient id="goldG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffdb70"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#cfBg)"/>
+  
+  <!-- Outer Window -->
+  <rect x="25" y="25" width="750" height="450" rx="12" fill="#1b1a23" stroke="#373545" stroke-width="1.5"/>
+  
+  <!-- Header Bar -->
+  <rect x="25" y="25" width="750" height="48" rx="12" fill="#23212e"/>
+  <rect x="25" y="60" width="750" height="13" fill="#23212e"/>
+  <line x1="25" y1="73" x2="775" y2="73" stroke="#373545" stroke-width="1"/>
+  
+  <!-- Window buttons -->
+  <circle cx="50" cy="49" r="6" fill="#ff5f56"/>
+  <circle cx="68" cy="49" r="6" fill="#ffbd2e"/>
+  <circle cx="86" cy="49" r="6" fill="#27c93f"/>
+  
+  <text x="400" y="54" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Qoneqt ContentForge AI — Automated Pipeline (Team ARCLIGHT)</text>
+
+  <!-- Pipeline Workflow Stages Bar -->
+  <rect x="50" y="92" width="700" height="60" rx="8" fill="#16151c" stroke="#2d2a3a" stroke-width="1"/>
+  
+  <!-- Stage 1 -->
+  <rect x="65" y="104" width="115" height="36" rx="6" fill="#242231" stroke="#ffdb70" stroke-width="1"/>
+  <text x="122" y="126" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">1. Community Idea</text>
+  <text x="195" y="126" fill="#65627a" font-family="sans-serif" font-size="14" text-anchor="middle">→</text>
+
+  <!-- Stage 2 -->
+  <rect x="210" y="104" width="115" height="36" rx="6" fill="#242231" stroke="#ffdb70" stroke-width="1"/>
+  <text x="267" y="126" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">2. Script &amp; Story</text>
+  <text x="340" y="126" fill="#65627a" font-family="sans-serif" font-size="14" text-anchor="middle">→</text>
+
+  <!-- Stage 3 -->
+  <rect x="355" y="104" width="115" height="36" rx="6" fill="#242231" stroke="#ffdb70" stroke-width="1"/>
+  <text x="412" y="126" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">3. Voice Synth</text>
+  <text x="485" y="126" fill="#65627a" font-family="sans-serif" font-size="14" text-anchor="middle">→</text>
+
+  <!-- Stage 4 -->
+  <rect x="500" y="104" width="115" height="36" rx="6" fill="#242231" stroke="#ffdb70" stroke-width="1"/>
+  <text x="557" y="126" fill="#ffdb70" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">4. Video Render</text>
+  <text x="630" y="126" fill="#65627a" font-family="sans-serif" font-size="14" text-anchor="middle">→</text>
+
+  <!-- Stage 5 -->
+  <rect x="645" y="104" width="90" height="36" rx="6" fill="url(#goldG)"/>
+  <text x="690" y="126" fill="#121212" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">Publish</text>
+
+  <!-- Main Content Workspace Area -->
+  <rect x="50" y="170" width="440" height="280" rx="8" fill="#14131a" stroke="#2d2a3a" stroke-width="1"/>
+  <text x="70" y="196" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Active Content Node: AI Director Studio</text>
+  
+  <!-- Storyboard Frames -->
+  <rect x="70" y="215" width="120" height="85" rx="6" fill="#211f2c" stroke="#ffdb70" stroke-width="1"/>
+  <text x="130" y="255" fill="#ffdb70" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">Scene 01: Hook</text>
+  <text x="130" y="272" fill="#a0a0a5" font-family="monospace" font-size="9" text-anchor="middle">0.00s - 3.20s</text>
+
+  <rect x="205" y="215" width="120" height="85" rx="6" fill="#211f2c" stroke="#3b374d" stroke-width="1"/>
+  <text x="265" y="255" fill="#d6d6d6" font-family="sans-serif" font-size="10" font-weight="500" text-anchor="middle">Scene 02: Narrative</text>
+  <text x="265" y="272" fill="#a0a0a5" font-family="monospace" font-size="9" text-anchor="middle">3.20s - 9.40s</text>
+
+  <rect x="340" y="215" width="130" height="85" rx="6" fill="#211f2c" stroke="#3b374d" stroke-width="1"/>
+  <text x="405" y="255" fill="#d6d6d6" font-family="sans-serif" font-size="10" font-weight="500" text-anchor="middle">Scene 03: CTA Call</text>
+  <text x="405" y="272" fill="#a0a0a5" font-family="monospace" font-size="9" text-anchor="middle">9.40s - 14.80s</text>
+
+  <!-- Script Box -->
+  <rect x="70" y="318" width="400" height="70" rx="6" fill="#1c1a25" stroke="#2d2a3a" stroke-width="1"/>
+  <text x="85" y="340" fill="#a0a0a5" font-family="sans-serif" font-size="10" font-weight="600">GENERATED VOICE OVER SCRIPT:</text>
+  <text x="85" y="360" fill="#ffffff" font-family="sans-serif" font-size="11">"Discover how open source intelligence transforms perimeter security..."</text>
+  <text x="85" y="377" fill="#ffdb70" font-family="monospace" font-size="10">Model: Mistral AI + ElevenLabs Voice Model • Duration: 14.8s</text>
+
+  <!-- Audio Waveform Visualization -->
+  <rect x="70" y="400" width="400" height="35" rx="4" fill="#16151e"/>
+  <path d="M 85 418 Q 95 405 105 418 T 125 418 T 145 408 T 165 418 T 185 428 T 205 418 T 225 405 T 245 418 T 265 425 T 285 418 T 305 410 T 325 418 T 345 422 T 365 418 T 385 408 T 405 418 T 425 425 T 445 418" fill="none" stroke="#ffdb70" stroke-width="1.8"/>
+
+  <!-- Right Panel (Publish Preview) -->
+  <rect x="510" y="170" width="240" height="280" rx="8" fill="#14131a" stroke="#2d2a3a" stroke-width="1"/>
+  <rect x="525" y="185" width="210" height="180" rx="6" fill="#1e1c27" stroke="#3b374d" stroke-width="1"/>
+  
+  <!-- Play Icon -->
+  <circle cx="630" cy="265" r="24" fill="#2d2a3a" stroke="#ffdb70" stroke-width="1.5"/>
+  <polygon points="625,255 640,265 625,275" fill="#ffdb70"/>
+  <text x="630" y="305" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">Short-Form 9:16 Video Ready</text>
+
+  <rect x="525" y="380" width="210" height="30" rx="6" fill="url(#goldG)"/>
+  <text x="630" y="400" fill="#121212" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">PUSH TO GLOBAL FEED</text>
+
+  <text x="630" y="432" fill="#a0a0a5" font-family="sans-serif" font-size="10" text-anchor="middle">CTRL FREAK 2026 • Team ARCLIGHT</text>
+</svg>
